@@ -1,21 +1,21 @@
 {
-    "manifest_version": 2,
-    "name": "太空维基",
-    "version": "0.0.0.1",
-    "permissions": [ "http://wikipedia.org/*", "http://zh.wikipedia.org/*", "http://en.wikipedia.org/*" ],
-    "description": "太空维基是一个免费的开源程序，是好用的维基百科 Chrome 浏览器扩展。可以增强体验、美化页面，使维基百科变得更美更舒心，符合您的阅读习惯。",
-    "icons" : {
-        "48": "icons/icon-48.png",
-        "128": "icons/icon-128.png"
-    },
-    "page_action": {
-        "default_icon": "icons/icon-19.png",
-        "default_title": "太空维基"
-    },
-    "content_scripts": [
-        {
-            "css": [ "css/main.css" ],
-            "matches": [ "http://wikipedia.org/*", "http://zh.wikipedia.org/*", "http://en.wikipedia.org/*" ]
-        }
-    ]
+	"manifest_version": 2,
+	"name": "太空维基",
+	"version": "0.0.0.1",
+	"description": "太空维基是一个免费的开源程序，是好用的维基百科 Chrome 浏览器扩展。可以增强体验、美化页面，使维基百科变得更美更舒心，符合您的阅读习惯。",
+	"icons" : {
+		"48": "icons/icon-48.png",
+		"128": "icons/icon-128.png"
+	},
+	"permissions": [ "*://*.wikipedia.org/*" ],
+	"page_action": {
+		"default_icon": "icons/icon-19.png",
+		"default_title": "太空维基"
+	},
+	"content_scripts": [
+		{
+			"css": [ "css/main.css" ],
+			"matches": [ "*://*.wikipedia.org/*" ]
+		}
+	]
 }

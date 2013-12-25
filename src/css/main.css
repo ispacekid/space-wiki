@@ -104,9 +104,10 @@ a[title="Learn about new features"],
 	border-radius: 3px;
 }
 	#content a {
-	border-bottom: 1px solid rgba(0, 0, 0, .075);
+		border-bottom: 1px solid rgba(0, 0, 0, .075);
 	}
-	#content .reference a {
+	#content sup a,
+	.toc a {
 		border-bottom: none !important;
 	}
 	#content a.new {
@@ -119,6 +120,9 @@ a[title="Learn about new features"],
 	margin: 19px 0 !important;
 	line-height: 1.8 !important;
 }
+	.template-facttext {
+		background-color: rgba(0, 0, 0, .1) !important;
+	}
 #firstHeading {
 	line-height: 1.8 !important;
 }
@@ -165,6 +169,8 @@ table {
 	.infobox.bordered th {
 		border: 1px #f6f4ec solid !important;
 	}
+	.infobox.geography td,
+	.infobox.geography th,
 	.infobox.geography .mergedtoprow td,
 	.infobox.geography .mergedtoprow th {
 		border-color: rgba(0, 0, 0, .1) !important;
@@ -173,9 +179,11 @@ table {
 /* Elements */
 .toc,
 .infobox,
+.fmbox,
 .thumbinner,
 #catlinks,
-.metadata {
+.metadata,
+#filetoc {
 	background: #e5e3db !important;
 	line-height: 1.8 !important;
 	border: none !important;
@@ -186,6 +194,14 @@ table {
 		.topicon a {
 			border: none !important;
 		}
-.thumbimage {
-	border: none !important;
+.thumbinner {
+	padding: 3px 2px !important;
+}
+	.thumbimage {
+		border: none !important;
+	}
+
+/* MP 2012 */
+#mp-2012-banner {
+	background-image: none !important;
 }

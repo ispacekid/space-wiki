@@ -195,13 +195,59 @@ table {
 			border: none !important;
 		}
 .thumbinner {
-	padding: 3px 2px !important;
+	/* padding: 3px 2px !important; */
 }
 	.thumbimage {
+		margin-top: 1px;
 		border: none !important;
 	}
 
 /* MP 2012 */
+#mp-2012 {
+	margin-top: -10px;
+}
+	#mp-2012 a.image,
+	#mp-2012 img.thumbborder,
+	#column-participate-button a {
+		border: none !important;
+	}
 #mp-2012-banner {
 	background-image: none !important;
 }
+	#mp-2012-banner-logo {
+		display: none !important;
+	}
+	#mp-2012-banner-title a {
+		border: none !important;
+	}
+	#mp-2012-banner-title h1 {
+		font-size: 32px;
+	}
+	#mp-2012-banner-title p {
+		margin: 0 !important;
+		color: #404040 !important;
+	}
+	#mp-2012-banner-intro {
+		font-size: 85%;
+	}
+	#mp-2012-banner-intro p {
+		margin: 25px 0 0 0 !important;
+		color: #404040 !important;
+		letter-spacing: 0 !important;
+	}
+	#mp-2012-banner-intro .number-of-articles a {
+		padding: 0 3px;
+		font-size: inherit !important;
+	}
+#mp-2012-body {
+	border-top: 1px solid rgba(0, 0, 0, .1);
+}
+	.mp-2012-column-left-block + .mp-2012-column-left-block {
+		border-top: 1px solid rgba(0, 0, 0, .1) !important;
+	}
+	.mp-2012-column-right-block,
+	#mp-2012-links table {
+		background: #e5e3db !important;
+		border: none !important;
+		box-shadow: none !important;
+	}

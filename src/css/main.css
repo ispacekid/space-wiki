@@ -1,10 +1,44 @@
 /* Global */
 * {
-	font-family: "Lucida Grande", Helvetica, Tahoma, sans-serif !important;
+	font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 ::selection { 
 	background: rgba(0, 0, 0, .1);
 	text-shadow: none;
+}
+::-webkit-scrollbar {
+	background-color: rgba(0, 0, 0, .1);
+	border: 0;
+	width: 10px;
+	height: 10px;
+}
+::-webkit-scrollbar-track {
+	border: 0;
+	background-clip: padding-box;
+	background-color: rgba(206, 205, 197, .95);
+}
+	::-webkit-scrollbar-track:hover {
+		background-color: rgba(0, 0, 0, .1);
+	}
+	::-webkit-scrollbar-track:active {
+		background-color: rgba(0, 0, 0, .2);
+	}
+::-webkit-scrollbar-thumb {
+	border: 0;
+	min-height: 34px;
+	padding-top: 100;
+	background-clip: padding-box;
+	background-color: rgba(0, 0, 0, .2);
+}
+	::-webkit-scrollbar-thumb:hover {
+		background-color: rgba(0, 0, 0, .3);
+	}
+	::-webkit-scrollbar-thumb:active {
+		background-color: rgba(0, 0, 0, .4);
+	}
+::-webkit-scrollbar-button {
+	width: 0;
+	height: 0;
 }
 body {
 	background: #e5e4db !important;
@@ -30,8 +64,6 @@ li {
 	margin-bottom: 0 !important;
 	line-height: 1.8;
 }
-.portal,
-#p-logo,
 #left-navigation,
 #right-navigation li,
 #siteNotice,
@@ -107,6 +139,7 @@ a[title="Learn about new features"],
 		border-bottom: 1px solid rgba(0, 0, 0, .075);
 	}
 	#content sup a,
+	#content a.image,
 	.toc a {
 		border-bottom: none !important;
 	}
@@ -176,7 +209,49 @@ table {
 		border-color: rgba(0, 0, 0, .1) !important;
 	}
 
+/* Portal */
+.portal,
+#p-logo,
+#p-lang .uls-settings-trigger,
+#p-lang .wbc-editpage {
+	display: none !important;
+}
+#p-lang {
+	display: block !important;
+	position: fixed;
+	top: 10px;
+	left: 230px;
+}
+#p-lang .body {
+	display: none !important;
+	max-height: 300px;
+	overflow-y: auto;
+	margin: 3px 0 0 0 !important;
+	padding: 0 15px;
+	background-color: rgba(206, 205, 197, .95);
+}
+	#p-lang-label {
+		padding: 4px 0 3px 15px !important;
+		background: none !important;
+	}
+		#p-lang-label a {
+			text-decoration: none !important;
+		}
+	#p-lang:hover .body {
+		display: block !important; 
+	}
+	#p-lang .body ul li {
+		padding: 5px 0 !important;
+	}
+	#p-lang .body ul li.FA,
+	#p-lang .body ul li.GA {
+		margin: 0 !important;
+		background: transparent !important;
+	}
+
 /* Elements */
+pre,
+.mw-code,
 .toc,
 .infobox,
 .fmbox,
@@ -187,6 +262,10 @@ table {
 	background: #e5e3db !important;
 	line-height: 1.8 !important;
 	border: none !important;
+}
+.gallerybox .thumb {
+	background: #e5e3db !important;
+	border-color: rgba(0, 0, 0, .1) !important;
 }
 	.topicon {
 		background: transparent !important;
